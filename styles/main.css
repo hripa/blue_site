@@ -1,0 +1,63 @@
+body {
+    font-family: arial;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background: url(../images/bg-copy.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 670px;
+    margin: 0;
+}
+
+.left {
+    padding-top: 65px;
+}
+
+.wrapper {
+    max-width: 1295px;
+    margin: auto;
+}
+
+#genus {
+    padding-top: 40px;
+}
+
+.text {
+    width: 460px;
+    height: 90px;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.button {
+    width: 255px;
+    padding: 48px 79px;
+}
+.information {
+    float: right;
+
+}
+.information  li {
+    display: inline-block;
+    transform: skewX(40deg);
+
+
+}
+.information a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+     padding: 8px 15px;
+    transform: skewX(-40deg)
+}
+.information  li:hover{
+    background-image:  url(images/fon.png);
+}
