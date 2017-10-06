@@ -41,23 +41,63 @@ body {
     width: 255px;
     padding: 48px 79px;
 }
+
 .information {
     float: right;
-
+    padding-top: 43px;
 }
-.information  li {
+
+.information li {
     display: inline-block;
     transform: skewX(40deg);
-
-
 }
+
 .information a {
     color: #ffffff;
     text-decoration: none;
     display: block;
-     padding: 8px 15px;
+    padding: 8px 15px;
     transform: skewX(-40deg)
 }
-.information  li:hover{
-    background-image:  url(images/fon.png);
+
+.information li:hover {
+    background: #fefcea;
+    background: linear-gradient(to top left, #0d8efe, #042a4e);
+    padding: 2px;
+    border-left: 2px solid #198dd4;
+    border-right: 2px solid #198dd4;
+}
+
+.form {
+    float: right;
+    padding-right: 208px;
+}
+
+.form input {
+    width: 100px;
+    height: 28px;
+    background-color: #113054;
+    border: 2px solid #465773;
+    color: #ffffff;
+}
+
+.languages {
+    display: inline-flex;
+    width: 100px;
+    float: right;
+    margin-left: 20px;
+}
+
+.languages input {
+    width: 25px;
+    border: none;
+    background: none;
+    border-left: 1px solid #4c5058;
+    color: #ffffff;
+}
+
+.registrar {
+    padding-top: 88px;
+    padding-right: 290px;
+    float: right;
 }
