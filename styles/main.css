@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1295px;
+    max-width: 1390px;
     margin: auto;
 }
 
@@ -44,12 +44,18 @@ body {
 
 .information {
     float: right;
-    padding-top: 43px;
+    padding-top: 35px;
 }
 
 .information li {
     display: inline-block;
     transform: skewX(40deg);
+}
+
+.information ul {
+    padding-right: 94px;
+    margin-right: 160px;
+    padding-bottom: 25px;
 }
 
 .information a {
@@ -88,7 +94,16 @@ body {
     margin-left: 20px;
 }
 
-.languages input {
+.languages a {
+    transform: skewX(0deg)
+}
+
+.languages a:hover {
+    background: linear-gradient(to top left, #0d8efe, #042a4e);
+    transform: skewX(0deg)
+}
+
+.languages a {
     width: 25px;
     border: none;
     background: none;
@@ -97,7 +112,67 @@ body {
 }
 
 .registrar {
-    padding-top: 88px;
+    padding-top: 40px;
     padding-right: 290px;
     float: right;
+}
+
+#tex {
+    width: 170px;
+}
+
+.strip_blue img {
+    width: 100%;
+    height: 54px;
+    opacity: 0.9;
+    margin-bottom: -10px;
+}
+
+.main {
+
+    height: 344px;
+}
+.nav {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    background: url(../images/-----26.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 16px;
+    width: 330px;
+    height: 33px;
+}
+
+.nav a {
+    font-size: 19px;
+    text-decoration: none;
+    color: #7a7a7a;
+    margin: 130px;
+    background-position: center;
+
+}
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+.nav a:hover {
+    color: #1967b4;
+}
+.info img{
+    float: left;
+    padding-top: 54px;
+}
+.info p {
+    padding-left: 340px;
+    padding-top: 56px;
+    line-height: 22px;
+}
+
+.background {
+    background-color: #dddddd;
+    height: 344px;
 }
