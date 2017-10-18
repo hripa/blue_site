@@ -49,7 +49,6 @@ body {
 
 .information li {
     display: inline-block;
-    transform: skewX(40deg);
 }
 
 .information ul {
@@ -59,11 +58,16 @@ body {
 }
 
 .information a {
+    float: right;
     color: #ffffff;
     text-decoration: none;
     display: block;
     padding: 8px 15px;
     transform: skewX(-40deg)
+}
+
+.information :last-child{
+    transform: none;
 }
 
 .information li:hover {
@@ -72,6 +76,10 @@ body {
     padding: 2px;
     border-left: 2px solid #198dd4;
     border-right: 2px solid #198dd4;
+    transform: skewX(40deg);
+}
+.information ul :hover :last-child {
+    transform: skewX(-40deg);
 }
 
 .form {
@@ -86,14 +94,13 @@ body {
     color: #ffffff;
 }
 
+
 .languages {
-    position: absolute;
     top: 125px;
-    right: 818px;
     display: inline-flex;
-    width: 100px;
+    width: 50px;
     float: right;
-    margin-left: 20px;
+
 }
 
 .languages a {
@@ -110,6 +117,17 @@ body {
     background: none;
     border-left: 1px solid #4c5058;
     color: #ffffff;
+    margin-left: 12px;
+}
+.languages a:last-child{
+    margin-left:0px;
+}
+.languages input {
+    border-left: 0px;
+    margin-left: -21px;
+    outline: 0;
+    height: 24px;
+
 }
 
 .registrar {
@@ -120,6 +138,8 @@ body {
 
 #tex {
     width: 180px;
+    border-right: 0;
+    margin-right: 20px;
 }
 
 .strip_blue img {
@@ -146,6 +166,8 @@ body {
     padding-top: 16px;
     width: 330px;
     height: 33px;
+    float: right;
+    margin-right: -77px;
 }
 
 .nav a {
@@ -158,8 +180,8 @@ body {
 }
 
 .nav ul {
-    padding: 0;
-    margin: 0;
+    margin: -16px;
+    padding-right: 360px;
 }
 
 .nav a:hover {
@@ -173,6 +195,7 @@ body {
     font-weight: 600;
     transition: none;
 }
+
 .nav li:hover {
     background: url(../images/shape-8-------4.png);
 }
@@ -184,7 +207,7 @@ body {
 
 .info p {
     padding-left: 340px;
-    padding-top: 56px;
+    padding-top: 100px;
     line-height: 22px;
 }
 
@@ -206,9 +229,8 @@ body {
 .conteiner {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 18px;
     height: 200px;
 }
 
@@ -220,4 +242,41 @@ body {
     float: left;
     font-size: 13px;
     line-height: 22px;
+}
+
+.line {
+    background: #dddddd;
+    height: 10px;
+}
+
+.conteiner2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.my-flex-block2 {
+    padding-top: 35px;
+}
+
+.conteiner3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bg {
+    background-image: url(../images/bottom-bg.png);
+    height: 85px;
+    padding-top: 45px;
+}
+
+.my-flex-block3 img {
+    padding-right: 10px;
+}
+.my-flex-block4 a {
+    padding-left: 15px;
 }
