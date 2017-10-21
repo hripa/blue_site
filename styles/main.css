@@ -6,11 +6,12 @@ body {
 }
 
 .top {
-    background: url(../images/bg-copy.png);
+    background-image: url(../images/bg-copy.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 670px;
-    margin: 0;
+    background-size: cover;
+    background-position: top center;
+    float: left;
+    width: 100%;
 }
 
 .left {
@@ -22,6 +23,12 @@ body {
     margin: auto;
 }
 
+/* header */
+.main-left, .main-right {
+    float: left;
+    width: 50%;
+}
+/* header */
 #genus {
     padding-top: 40px;
 }
@@ -47,44 +54,42 @@ body {
     padding-top: 35px;
 }
 
-.information li {
-    display: inline-block;
-}
-
 .information ul {
     padding-right: 94px;
     margin-right: 160px;
     padding-bottom: 25px;
 }
 
+.information li {
+    display: inline-block;
+    position: relative;
+}
+
 .information a {
-    float: right;
     color: #ffffff;
     text-decoration: none;
     display: block;
     padding: 8px 15px;
-    transform: skewX(-40deg)
+    position: relative;
+
 }
 
-.information :last-child{
-    transform: none;
-}
-
-.information li:hover {
-    background: #fefcea;
+.information li:not(:last-child):hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(to top left, #0d8efe, #042a4e);
-    padding: 2px;
     border-left: 2px solid #198dd4;
     border-right: 2px solid #198dd4;
     transform: skewX(40deg);
 }
-.information ul :hover :last-child {
-    transform: skewX(-40deg);
-}
 
 .form {
-    float: right;
-    padding-right: 340px;
+    float: left;
+    
 }
 
 .form input {
@@ -142,46 +147,45 @@ body {
     margin-right: 20px;
 }
 
-.strip_blue img {
+.strip_blue {
+    float: left;
     width: 100%;
-    height: 54px;
-    opacity: 0.9;
-    margin-bottom: -10px;
+    background-color: #121c3c;
+    height: 60px;
 }
 
-.main {
-    height: 344px;
-}
+
 
 .nav {
-    padding: 0;
-    margin: 0;
+    float: left;
+    width: 100%;
 }
 
 .nav li {
-    background: url(../images/-----26.png);
+    background-image: url(../images/-----26.png);
     background-repeat: no-repeat;
     list-style-type: none;
     display: inline-block;
-    padding-top: 16px;
+    line-height: 58px;
     width: 330px;
-    height: 33px;
+    height: 54px;
     float: right;
-    margin-right: -77px;
+    margin-left: -77px;
+    text-align: center
 }
 
 .nav a {
     font-size: 18px;
     text-decoration: none;
     color: #7a7a7a;
-    margin: 130px;
-    background-position: center;
-    line-height: 28px;
+    width: 100%;
+    display: inline-block;
 }
 
 .nav ul {
-    margin: -16px;
-    padding-right: 360px;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .nav a:hover {
@@ -198,50 +202,77 @@ body {
 
 .nav li:hover {
     background: url(../images/shape-8-------4.png);
+    position: relative;
+}
+
+.info {
+    float: left;
+    width: 100%;
+    margin: 40px 0px;
 }
 
 .info img {
     float: left;
-    padding-top: 54px;
+    
+    
 }
 
 .info p {
-    padding-left: 340px;
-    padding-top: 100px;
+    float: left;
     line-height: 22px;
+    margin: 0px; 
+    padding-left: 40px;  
+   
+    
+    
 }
 
 .background {
     background-color: #dddddd;
-    height: 370px;
-    margin-bottom: -23px;
+    float: left;
+    width: 100%;
+}
+
+.variety {
+    clear: both;
 }
 
 #caption {
     font-size: 20px;
+    margin: 0 auto;
     text-align: center;
     background-image: url(../images/caption.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 12px;
+    padding: 8px 0;
+    width: 265px;
+    display: block;
+    text-decoration: none;
+    color: grey;
 }
 
 .conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
+    display: inline-block;
+    width: 100%;
+   
+}
+.my-flex-block {
+    float: left;
+    width: 33.3%;
+    margin: 50px 0px;
+    
 }
 
 .my-flex-block img {
     float: left;
+   padding-right: 10px;
 }
 
 .my-flex-block p {
     float: left;
     font-size: 13px;
     line-height: 22px;
+    margin: 0;
 }
 
 .line {
